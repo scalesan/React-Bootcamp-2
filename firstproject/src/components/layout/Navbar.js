@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Navbar = props => {
-
+const Navbar = ({ title }) => {
     return (
         <nav className="navbar bg-primary">
-            <h1>{props.title}</h1>
+            <h1>{title}</h1>
         </nav>
     )
 
@@ -13,5 +12,7 @@ const Navbar = props => {
 Navbar.defaultProps = {
     title: "Github Finder"
 }
+
+
 
 export default Navbar
